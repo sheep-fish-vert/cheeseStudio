@@ -15,11 +15,44 @@
 }
 @media screen and (max-width: 992px){
 
+    /* header */
+
+        .header{
+            .header-nav{
+                ul{
+                    li{
+                        a{padding:0 5px 5px 5px;margin-bottom: 5px;}
+                    }
+                }
+            }
+        }
+
+    /* /header */
+
 }
 @media screen and (max-width: 767px){
 
 }
 @media screen and (max-width: 666px){
+
+    /* header */
+
+        .header{
+            .header-wrap{display: block;}
+            .header-logo{position: relative;z-index: 2;}
+            .header-nav{position: absolute;left: 0;top: -22px;width: 100%;padding-top: 99px;padding-bottom:10px;z-index: 1;overflow:hidden;background-color: rgba(0,0,0, .75);
+                ul{
+                    li{display: block;text-align: center;margin-bottom: 10px;position:relative;left:0;transition:left 300ms ease;
+                        &:nth-child(odd){left: 100%;}
+                        &:nth-child(even){left: -100%;}
+                        &.show{left: 0;}
+                    }
+                }
+            }
+            .header-sendwich{display: block;z-index: 2;}
+        }
+
+    /* /header */
 
 }
 @media screen and (max-width: 479px){
