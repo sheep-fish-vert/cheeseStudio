@@ -18,6 +18,12 @@
 //  example -> @include font-face('PFDinTextPro', 'PFDinTextPro-Bold', 700, italic);
 
 @include font-face('slick');
-
+@include font-face('ProximaNova', 'ProximaNova-Black', 900);
+@include font-face('ProximaNova', 'ProximaNova-Extrabld', 800);
+@include font-face('ProximaNova', 'ProximaNova-Bold', 700);
+@include font-face('ProximaNova', 'ProximaNova-Semibold', 600);
+@include font-face('ProximaNova', 'ProximaNova-Regular', 400);
+@include font-face('ProximaNova', 'ProximaNova-Light', 300);
+@include font-face('BebasNeueBold', 'BebasNeueBold', 700);
 
 /* /fonts*/
