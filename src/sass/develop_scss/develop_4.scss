@@ -1,0 +1,14 @@
+.triangle{position: absolute;top: -90px;left: 0;width: 100%;height: 90px;overflow: hidden;
+    &.top{
+        &:after{position: absolute;width: calc(100% + 200px);height: 100%;content: '';background: url(../images/sahara-bg.jpg) repeat;top: 46%;left: -100px;transform: rotate(-2.4deg);}
+    }
+    &.bottom{top: auto;bottom:-90px;
+        &:after{position: absolute;width: calc(100% + 200px);height: 100%;content: '';background: url(../images/sahara-bg.jpg) repeat;bottom: 46%;left: -100px;transform: rotate(2.4deg);}
+    }
+}
+
+/*what-we-doing*/
+.what-we-doing{min-height: 1328px;background: url(../images/sahara-bg.jpg) repeat;position: relative;margin-top: 150px;margin-bottom: 200px;
+
+}
+/*/what-we-doing*/
