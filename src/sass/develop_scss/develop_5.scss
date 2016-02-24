@@ -1,22 +1,22 @@
 /*scheme*/
     .scheme{
-        .scheme-wrap{}
+        .scheme-wrap{max-width: 1220px;}
         .scheme-align{}
-        .title{text-align: center;
+        .title{text-align: center;     margin-bottom: 26px;
             h2{text-transform: uppercase; font:700 72px/72px 'BebasNeueBold'; color:#4f4f4f; }
         }
-        .subtitle{border-top: 1px solid #30dcdc; border-bottom: 1px solid #30dcdc; width: 100%; text-align: center;
-            p{font:400 24px/24px 'ProximaNova'; color: #4f4f4f;}
-            b{font:900 24px/24px 'ProximaNova';color:#1cb3b3;}
+        .subtitle{border-top: 1px solid #30dcdc; border-bottom: 1px solid #30dcdc; width: 100%; text-align: center; text-transform: uppercase;     padding: 34px 155px 32px;
+            p{font:400 24px/29px 'ProximaNova'; color: #4f4f4f;}
+            b{font:900 24px/29px 'ProximaNova';color:#1cb3b3;}
         }
-        .content{}
-        .content-wrap{}
-        .item{
+        .content{    padding-top: 40px;}
+        .content-wrap{text-align: center;}
+        .item{display: inline-block; position: relative;
             .item-align{text-align: center; width: 200px;}
-            .round{width: 200px; height:200px; border-radius: 50%; border:1px solid #e8af7e;
-                .txt{position: relative;
-                    p{font:400 14px/14px 'ProximaNova'; color: #4f4f4f;}
-                    &:after{content: ''; display:block;  width:35px; height: 2px; background-color: #e8af7e; left:50%; transform:translateX(-50%); position: absolute;}
+            .round{width: 200px; height:200px; border-radius: 50%; border:2px solid #e8af7e; position: relative;
+                .txt{ width:100%;     padding: 8px 24px 0; display: table-cell; height: 100px; vertical-align: middle; text-align: center;
+                    p{font:400 14px/17px 'ProximaNova'; color: #4f4f4f; text-transform: uppercase;}
+                    &:after{content: ''; display:block;  width:35px; height: 2px; background-color: #e8af7e; left:50%; transform:translateX(-50%); position: absolute; bottom: 97px;}
                 }
                 .img{}
             }
@@ -25,6 +25,9 @@
                     &:after, &:before{content: ''; display:inline-block;  width:20px; height: 1px; background-color: #b9b9b9; vertical-align: middle;}
                 }
             }
+           &:after{content: ''; display: block; border-radius: 50%; width: 15px; height: 15px; border: 4px solid #e8af7e; top:93px; right:-25px; position: absolute;}
+           &:nth-child(4),
+           &:nth-child(7){&:after{display: none;}}
         }
     }
 /*END scheme*/
