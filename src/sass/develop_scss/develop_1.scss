@@ -44,3 +44,18 @@
     }
 
 /* /top-block */
+
+/* last-work */
+
+    .last-work{background-image:url(../images/last-works-bg.jpg);background-repeat: no-repeat;background-position: center top;padding-top: 170px;text-align: center;
+
+        .title{font-family: 'BebasNeueBold', sans-serif;font-weight: 700;color:#fff;font-size: 72px;}
+        .sub-title{max-width: 1065px;width: 100%;margin:0 auto;padding: 25px 50px;font-size: 24px;color:#fff;text-transform: uppercase;border:1px solid #7b5536;box-shadow:0 0 7px 0 rgba(98, 65, 38, .67), inset 0 0 7px 0 rgba(98, 65, 38, .67);margin-bottom: 20px;
+            span{font-weight: 900;color:#1cb3b3;}
+        }
+
+        .slider-wrap{padding: 0 110px;}
+
+    }
+
+/* /last-work */

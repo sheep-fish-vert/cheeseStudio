@@ -1,16 +1,14 @@
 
 function sendwichFunc(){
 
-    var point = null;
-    var timer = null;
+    var point = null; //current menu item var
+    var timer = null; //for setInterval
 
     $('.header-sendwich').click(function(){
 
-
-
         if(!$(this).is('.paused')){
 
-            $(this).addClass('paused');
+            $(this).addClass('paused'); //add class for bloching event on sendwich by click
 
             if(!$(this).is('.active')){
 
@@ -70,9 +68,19 @@ function sendwichFunc(){
 
 };
 
+function lastWorksSlider(){
+
+    $('.slider').slick({
+        centerMode: true,
+        slidesToShow: 3
+    });
+
+};
+
 $(document).ready(function(){
 
     sendwichFunc();
+    lastWorksSlider();
 
 });
 
