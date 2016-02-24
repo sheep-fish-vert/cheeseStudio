@@ -71,8 +71,8 @@ function sendwichFunc(){
 function lastWorksSlider(){
 
     $('.slider').slick({
-        centerMode: true,
-        slidesToShow: 3
+        slidesToShow: 3,
+        dots:true
     });
 
 };

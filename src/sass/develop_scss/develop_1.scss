@@ -54,7 +54,34 @@
             span{font-weight: 900;color:#1cb3b3;}
         }
 
-        .slider-wrap{padding: 0 110px;}
+        .slider-wrap{padding: 0 110px;
+            .slick-list{padding-top: 45px!important;padding-bottom: 45px!important;}
+            .slider-item{padding: 0 30px;transform:scale(1);padding:0 30px;transition:transform 300ms ease;
+                a{display: block;position: relative;padding-bottom: 72px;border:3px solid #4d301a;border-radius:5px;background-color:#4d301a;overflow: hidden;transition:border-color 300ms ease, box-shadow 300ms ease, background-color 300ms ease;
+                    .slider-description{position: absolute;bottom: 0;width: 100%;min-height: 72px;background-color: #4d301a;color:#fff;display: table;padding: 5px 5px 5px 5px;transition:background-color 300ms ease;
+                        .slider-description-wrap{display: table-cell;vertical-align: middle;}
+                    }
+                    .slider-description-title{font-weight: 800;font-size: 18px;text-transform: uppercase;}
+                    .slider-description-text{font-size: 18px;}
+                }
+
+                &.slick-current{
+                    &+.slick-active{transform:scale(1.25);
+                        a{background-color:#8e5f39;border-color:#8e5f39;box-shadow:0 0 17px 0 rgba(142, 95, 57, .39);
+                            .slider-description{background-color: #8e5f39;}
+                        }
+                    }
+                }
+            }
+            .slick-prev, .slick-next{width: 86px;height: 111px;border:2px solid #603913;border-radius: 5px;box-shadow:inset 0 0 7px 0 rgba(98, 65, 38, .69), 0 0 7px 0 rgba(98, 65, 38, .69);transition:border-color 300ms ease, box-shadow 300ms ease;
+                &:before{content:'';display:block;width: 17px;height: 20px;background-image:url(../images/slider-arrow.png);background-repeat: no-repeat;margin:0 auto;opacity: 1;}
+                &:hover{box-shadow:inset 0 0 7px 0 rgba(28, 179, 179, .69), 0 0 7px 0 rgba(28, 179, 179, .69);border-color:#1cb3b3;}
+            }
+            .slick-prev{right:calc(100% + 15px);left: auto;}
+            .slick-next{left:calc(100% + 15px);right: auto;
+                &:before{transform:rotate(180deg);}
+            }
+        }
 
     }
 
