@@ -70,6 +70,8 @@ body{background: url(../images/sahara-bg.jpg) repeat;}
         .form_row{width: 50%; float: left;
             &:first-child{padding-right: 30px;}
         }
+        .form_input{position: relative;}
+        .errorText{ color:red; position: absolute; top: 51px;    width: 100%;    left: 0;}
         input,textarea{border:1px solid rgba(255,255,255,0.5); border-radius: 5px; background-color: transparent;  font:300 18px/24px 'ProximaNova'; color:#fff; resize:none; padding-left: 10px;
             &:focus{border-color: #fff;}
         }
@@ -84,8 +86,10 @@ body{background: url(../images/sahara-bg.jpg) repeat;}
         button{width: 100%; max-width: 300px; height: 60px; background-color: transparent; border:2px solid #e8af7e; border-radius: 30px; color:#fff; font:300 18px/24px 'ProximaNova'; text-transform: uppercase;
             &:hover, &:active{background-color: #e8af7e; font-weight: bold;}
         }
-        .container-contact{
-            .one-item{}
+        .container-contact{display: flex; flex-wrap: no-wrap; justify-content:space-between; align-items: flex-end;
+            .one-item{text-align: center;
+                span{color:#fff; font:300 18px/24px 'ProximaNova';}
+            }
         }
     }
 /*END contacts*/
