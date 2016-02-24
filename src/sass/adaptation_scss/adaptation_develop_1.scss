@@ -40,7 +40,7 @@
         .header{
             .header-wrap{display: block;}
             .header-logo{position: relative;z-index: 2;}
-            .header-nav{position: absolute;left: 0;top: -22px;width: 100%;padding-top: 99px;padding-bottom:10px;z-index: 1;overflow:hidden;background-color: rgba(0,0,0, .75);
+            .header-nav{position: absolute;left: 0;top: -22px;width: 100%;padding-top: 99px;padding-bottom:10px;z-index: 1;overflow:hidden;background-color: rgba(0,0,0, .75);display: none;
                 ul{
                     li{display: block;text-align: center;margin-bottom: 10px;position:relative;left:0;transition:left 300ms ease;
                         &:nth-child(odd){left: 100%;}
@@ -53,6 +53,14 @@
         }
 
     /* /header */
+
+    /* top-block */
+
+        .top-block{
+            .video-img{max-width: calc(100% + 225px);}
+        }
+
+    /* /top-block */
 
 }
 @media screen and (max-width: 479px){
