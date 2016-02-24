@@ -59,10 +59,11 @@ body{background: url(../images/sahara-bg.jpg) repeat;}
         .contacts-wrap{ max-width: 1213px;}
         .contacts-align{}
         &:before{content: ''; display: block; position: absolute; left:0; top:-145px; background-image: url(../images/contactsBG-top.png); background-position: left top;  background-repeat: no-repeat; height: 145px; width: 100%;}
-        .title{text-align: center;     margin-bottom: 26px;
+        .title{text-align: center;     margin-bottom: 5px;position: relative;
             h2{text-transform: uppercase; font:700 72px/72px 'BebasNeueBold'; color:#fff; }
+            &:before{position: absolute; content: ''; display: block; left:70px; bottom: -7px; background-image: url(../images/camera1.png); opacity:0.1; width: 258px; height: 157px; background-position: left bottom; background-repeat: no-repeat;}
         }
-        .subtitle{ border:8px solid rgba(28, 179, 179, 0.3); border-radius: 60px; display: inline-block;
+        .subtitle{ border:8px solid rgba(28, 179, 179, 0.3); border-radius: 60px; display: inline-block;     padding: 17px 114px;
             p{text-transform: uppercase; font:400 24px/29px 'ProximaNova'; color:#fff;}
         }
         .logo{display: inline-block;}
