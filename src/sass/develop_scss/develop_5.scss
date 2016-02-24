@@ -32,3 +32,25 @@
     }
 /*END scheme*/
 body{background: url(../images/sahara-bg.jpg) repeat;}
+/*clients*/
+    .our-clients{
+        .clients-wrap{max-width: 1340px;}
+        .clients-align{}
+        .title{text-align: center;     margin-bottom: 26px;
+            h2{text-transform: uppercase; font:700 72px/72px 'BebasNeueBold'; color:#4f4f4f; }
+        }
+        .subtitle{border-top: 1px solid #30dcdc; border-bottom: 1px solid #30dcdc; width: 100%; text-align: center; text-transform: uppercase;     padding: 34px 155px 33px; max-width: 1180px; margin: 0 auto;
+            p{font:400 24px/29px 'ProximaNova'; color: #4f4f4f;}
+            b{font:900 24px/29px 'ProximaNova';color:#1cb3b3;}
+        }
+        .content{display: flex; flex-wrap: wrap; justify-content:space-between;    padding-top: 40px;}
+        .item{width:226px; margin-bottom: 11px; display: inline-block;
+            .img{padding-left: 13px;}
+            .txt{ height: 139px; overflow: hidden; text-align: center; width: 100%; padding: 5px;
+                p{font:700 14px/17px 'ProximaNova'; color: #4f4f4f; text-transform: uppercase;}
+                b{font:700 24px/29px 'ProximaNova'; text-transform:none;}
+                span{font:300 14px/17px 'ProximaNova'; color:#bebebf; text-transform:none;}
+            }
+        }
+    }
+/*clients*/
