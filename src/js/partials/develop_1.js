@@ -72,7 +72,23 @@ function lastWorksSlider(){
 
     $('.slider').slick({
         slidesToShow: 3,
-        dots:true
+        dots:true,
+        draggable:false,
+        responsive: [
+           {
+                breakpoint: 769,
+                settings: {
+                    slidesToShow:1
+                }
+            },
+            {
+                breakpoint: 667,
+                settings: {
+                    arrows:1,
+                    slidesToShow:1
+                }
+            }
+        ]
     });
 
 };

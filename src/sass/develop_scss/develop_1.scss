@@ -59,6 +59,7 @@
             .slick-list{padding-top: 45px!important;padding-bottom: 45px!important;}
             .slider-item{padding: 0 30px;transform:scale(1);padding:0 30px;transition:transform 300ms ease;
                 a{display: block;position: relative;padding-bottom: 72px;border:3px solid #4d301a;border-radius:5px;background-color:#4d301a;overflow: hidden;transition:border-color 300ms ease, box-shadow 300ms ease, background-color 300ms ease;
+                    img{margin:0 auto;min-width: 100%;}
                     .slider-description{position: absolute;bottom: 0;width: 100%;min-height: 72px;background-color: #4d301a;color:#fff;display: table;padding: 5px 5px 5px 5px;transition:background-color 300ms ease;
                         .slider-description-wrap{display: table-cell;vertical-align: middle;}
                     }
