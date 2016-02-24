@@ -54,6 +54,14 @@
 
     /* /header */
 
+    /* top-block */
+
+        .top-block{
+            .video-img{max-width: calc(100% + 225px);}
+        }
+
+    /* /top-block */
+
 }
 @media screen and (max-width: 479px){
 
