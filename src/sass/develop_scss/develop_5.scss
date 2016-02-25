@@ -1,0 +1,96 @@
+/*scheme*/
+    .scheme{
+        .scheme-wrap{max-width: 1220px;}
+        .scheme-align{}
+        .title{text-align: center;     margin-bottom: 26px;
+            h2{text-transform: uppercase; font:700 72px/72px 'BebasNeueBold'; color:#4f4f4f; }
+        }
+        .subtitle{border-top: 1px solid #30dcdc; border-bottom: 1px solid #30dcdc; width: 100%; text-align: center; text-transform: uppercase;     padding: 34px 155px 32px;
+            p{font:400 24px/29px 'ProximaNova'; color: #4f4f4f;}
+            b{font:900 24px/29px 'ProximaNova';color:#1cb3b3;}
+        }
+        .content{    padding-top: 40px;}
+        .content-wrap{text-align: center;}
+        .item{display: inline-block; position: relative; margin-right: 45px;
+            .item-align{text-align: center; width: 200px;}
+            .round{width: 200px; height:200px; border-radius: 50%; border:2px solid #e8af7e; position: relative;
+                .txt{ width:100%;     padding: 8px 24px 0; display: table-cell; height: 100px; vertical-align: middle; text-align: center;
+                    p{font:400 14px/17px 'ProximaNova'; color: #4f4f4f; text-transform: uppercase;}
+                    &:after{content: ''; display:block;  width:35px; height: 2px; background-color: #e8af7e; left:50%; transform:translateX(-50%); position: absolute; bottom: 97px;}
+                }
+                .img{    padding-top: 12px;}
+            }
+            .number{    padding: 15px 0 37px;
+                p{font:700 48px/48px 'BebasNeueBold'; color: #b9b9b9;
+                    &:after, &:before{content: ''; display:inline-block;  width:20px; height: 1px; background-color: #b9b9b9; vertical-align: middle;  margin: 0 7px;}
+                }
+            }
+           &:after{content: ''; display: block; border-radius: 50%; width: 15px; height: 15px; border: 4px solid #e8af7e; top:92px; right:-32px; position: absolute;}
+           &:nth-child(4),
+           &:nth-child(7){&:after{display: none;}}
+        }
+    }
+/*END scheme*/
+body{background: url(../images/sahara-bg.jpg) repeat;}
+/*clients*/
+    .our-clients{
+        .clients-wrap{max-width: 1340px;}
+        .clients-align{}
+        .title{text-align: center;     margin-bottom: 26px;
+            h2{text-transform: uppercase; font:700 72px/72px 'BebasNeueBold'; color:#4f4f4f; }
+        }
+        .subtitle{border-top: 1px solid #30dcdc; border-bottom: 1px solid #30dcdc; width: 100%; text-align: center; text-transform: uppercase;     padding: 34px 155px 33px; max-width: 1180px; margin: 0 auto;
+            p{font:400 24px/29px 'ProximaNova'; color: #4f4f4f;}
+            b{font:900 24px/29px 'ProximaNova';color:#1cb3b3;}
+        }
+        .content{display: flex; flex-wrap: wrap; justify-content:space-between;    padding-top: 40px;}
+        .item{width:226px; margin-bottom: 11px; display: inline-block;
+            .img{padding-left: 13px;}
+            .txt{ height: 139px; overflow: hidden; text-align: center; width: 100%; padding: 5px;
+                p{font:700 14px/17px 'ProximaNova'; color: #4f4f4f; text-transform: uppercase;}
+                b{font:700 24px/29px 'ProximaNova'; text-transform:none;}
+                span{font:300 14px/17px 'ProximaNova'; color:#bebebf; text-transform:none;}
+            }
+        }
+    }
+/*clients*/
+/*contacts*/
+    .contacts{background: url(../images/contactsBG.jpg) repeat; position: relative; text-align: center;
+        .contacts-wrap{ max-width: 1213px;}
+        .contacts-align{}
+        &:before{content: ''; display: block; position: absolute; left:0; top:-145px; background-image: url(../images/contactsBG-top.png); background-position: left top;  background-repeat: no-repeat; height: 145px; width: 100%;}
+        .title{text-align: center;     margin-bottom: 5px;position: relative;
+            h2{text-transform: uppercase; font:700 72px/72px 'BebasNeueBold'; color:#fff; }
+            &:before{position: absolute; content: ''; display: block; left:70px; bottom: -7px; background-image: url(../images/camera1.png); opacity:0.1; width: 258px; height: 157px; background-position: left bottom; background-repeat: no-repeat;}
+        }
+        .subtitle{ border:8px solid rgba(28, 179, 179, 0.3); border-radius: 60px; display: inline-block;     padding: 17px 114px;
+            p{text-transform: uppercase; font:400 24px/29px 'ProximaNova'; color:#fff;}
+        }
+        .logo{display: inline-block;}
+        .form-title{font:400 18px/24px 'ProximaNova'; color:#fff; text-transform: uppercase; border-bottom:8px solid rgba(28, 179, 179, 0.3);}
+        .form_row{width: 50%; float: left;
+            &:first-child{padding-right: 30px;}
+        }
+        .form_input{position: relative;}
+        .errorText{ color:red; position: absolute; top: 51px;    width: 100%;    left: 0;}
+        input,textarea{border:1px solid rgba(255,255,255,0.5); border-radius: 5px; background-color: transparent;  font:300 18px/24px 'ProximaNova'; color:#fff; resize:none; padding-left: 10px;
+            &:focus{border-color: #fff;}
+        }
+        input{height: 50px; width: 100%; margin-bottom: 30px;}
+        textarea{height: 210px; width: 100%; padding: 10px;}
+        .camera2{position: absolute; right: 0; bottom: 0; opacity: 0.1;}
+        ::-webkit-input-placeholder {color:#fff; font:300 18px/24px 'ProximaNova';}
+        :-moz-placeholder {color:#fff; font:300 18px/24px 'ProximaNova';}
+        ::-moz-placeholder {color:#fff; font:300 18px/24px 'ProximaNova';}
+        :-ms-input-placeholder {color:#fff; font:300 18px/24px 'ProximaNova';}
+        .button-row{text-align: right;  padding-bottom:20px; border-bottom:5px solid rgba(28, 179, 179, 0.3);}
+        button{width: 100%; max-width: 300px; height: 60px; background-color: transparent; border:2px solid #e8af7e; border-radius: 30px; color:#fff; font:300 18px/24px 'ProximaNova'; text-transform: uppercase;
+            &:hover, &:active{background-color: #e8af7e; font-weight: bold;}
+        }
+        .container-contact{display: flex; flex-wrap: no-wrap; justify-content:space-between; align-items: flex-end;
+            .one-item{text-align: center;
+                span{color:#fff; font:300 18px/24px 'ProximaNova';}
+            }
+        }
+    }
+/*END contacts*/
