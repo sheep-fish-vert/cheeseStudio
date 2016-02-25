@@ -172,6 +172,7 @@ function popNext(popupId, popupWrap){
         padding:0,
         fitToView:false,
         wrapCSS:popupWrap,
+        wrapCSS:'fancybox-form',
         autoSize:true,
         afterClose: function(){
             $('form').trigger("reset");
@@ -210,7 +211,29 @@ function fancyboxForm(){
   })
 }
 
+function popupRadius(){
+
+    $(document).on('mouseup', '.fancybox-inner', function(e){
+
+        var convert = $(window).scrollTop();
+
+        var radius = $(this).width()/2;
+        var yCoord = e.pageY - convert;
+        var xCoord = e.pageX;
+        var clickWidth = Math.sqrt(Math.pow((yCoord - ($(window).height()/2)), 2)+Math.pow((xCoord - (($(window).width()-25)/2)), 2));
+
+        if(clickWidth > radius){
+            $.fancybox.close();
+        }
+
+    });
+
+}
+
 $(document).ready(function(){
+    popupRadius();
+
+
    validate('#call-popup .contact-form', {submitFunction:validationCall});
    validate('.contact-form2', {submitFunction:validationCall});
    Maskedinput();

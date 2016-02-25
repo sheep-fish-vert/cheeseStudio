@@ -14,16 +14,21 @@
 
 }
 @media screen and (max-width: 992px){
-
+    .what-we-doing .what-we-doing-main .what-we-doing-item {  width: 50%;}
 }
 @media screen and (max-width: 767px){
 
 }
 @media screen and (max-width: 666px){
-
+    .what-we-doing .what-we-doing-main .what-we-doing-item {  width: 80%;}
+    .what-we-doing .title { font-size: 56px;}
+    .what-we-doing .descript .descript-title { font-size: 32px;}
+    .what-we-doing .descript .descript-text {font-size: 18px;}
 }
 @media screen and (max-width: 479px){
-
+    .what-we-doing .what-we-doing-main .what-we-doing-item {  width: 100%;}
+    .what-we-doing .title {font-size: 42px;padding-top: 10px; padding-bottom: 25px;}
+    .what-we-doing .descript .descript-title {font-size: 26px;}
 }
 @media screen and (max-width: 320px){
 
