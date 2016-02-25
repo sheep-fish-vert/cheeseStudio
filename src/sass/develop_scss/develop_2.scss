@@ -15,11 +15,16 @@
             .item{width: 20%; float: left; padding-top: 20px; padding-bottom: 20px;
                 .contfet{min-height: 70px; display: table; width: 100%;
                     .cont-for-tab{display: table-cell; vertical-align: middle; text-align: center;
-                        .convert-img1{background-image: url(../images/i1.png); background-position: center center; background-size: 46px 66px; width: 46px; height: 66px; margin: 0 auto;}
-                        .convert-img2{background-image: url(../images/i2.png); background-position: center center; background-size: 65px 51px; width: 65px; height: 51px; margin: 0 auto;}
-                        .convert-img3{background-image: url(../images/i3.png); background-position: center center; background-size: 61px 40px; width: 61px; height: 40px; margin: 0 auto;}
-                        .convert-img4{background-image: url(../images/i4.png); background-position: center center; background-size: 69px 61px; width: 69px; height: 61px; margin: 0 auto;}
-                        .convert-img5{background-image: url(../images/i5.png); background-position: center center; background-size: 52px 52px; width: 52px; height: 52px; margin: 0 auto;}
+
+                        .convert-img1{background-image: url(../images/i1.png); background-position: center center; background-size: 46px 66px; width: 46px; height: 66px; margin: 0 auto; animation: pulseImgO 1s linear infinite;}
+
+                        .convert-img2{background-image: url(../images/i2.png); background-position: center center; background-size: 65px 51px; width: 65px; height: 51px; margin: 0 auto; animation: pulseImgS 1s linear infinite;}
+
+                        .convert-img3{background-image: url(../images/i3.png); background-position: center center; background-size: 61px 40px; width: 61px; height: 40px; margin: 0 auto; animation: pulseImgT 1s linear infinite;}
+
+                        .convert-img4{background-image: url(../images/i4.png); background-position: center center; background-size: 69px 61px; width: 69px; height: 61px; margin: 0 auto; animation: pulseImgF 1s linear infinite;}
+
+                        .convert-img5{background-image: url(../images/i5.png); background-position: center center; background-size: 52px 52px; width: 52px; height: 52px; margin: 0 auto; animation: pulseImgD 1s linear infinite;}
                     }
                 }
                 .after-text{font-size: 18px;font-family: "ProximaNova"; color: white; max-width: 280px;    line-height: 21px; margin: 0 auto;}
@@ -33,6 +38,59 @@
     }
 }
 
+
+@keyframes pulseImgO {
+    0%   {background-image: url(../images/i1.png); }
+    50%  {background-image: url(../images/io1.png);}
+    100% {background-image: url(../images/i1.png);}
+}
+
+@keyframes pulseImgS {
+    0%   {background-image: url(../images/i2.png); }
+    50%  {background-image: url(../images/io2.png);}
+    100% {background-image: url(../images/i2.png);}
+}
+@keyframes pulseImgT {
+    0%   {background-image: url(../images/i3.png); }
+    50%  {background-image: url(../images/io3.png);}
+    100% {background-image: url(../images/i3.png);}
+}
+@keyframes pulseImgF {
+    0%   {background-image: url(../images/i4.png); }
+    50%  {background-image: url(../images/io4.png);}
+    100% {background-image: url(../images/i4.png);}
+}
+@keyframes pulseImgD {
+    0%   {background-image: url(../images/i5.png); }
+    50%  {background-image: url(../images/io5.png);}
+    100% {background-image: url(../images/i5.png);}
+}
+@-webkit-keyframes pulseImgO {
+    0%   {background-image: url(../images/i1.png); }
+    50%  {background-image: url(../images/io1.png);}
+    100% {background-image: url(../images/i1.png);}
+}
+
+@-webkit-keyframes pulseImgS {
+    0%   {background-image: url(../images/i2.png); }
+    50%  {background-image: url(../images/io2.png);}
+    100% {background-image: url(../images/i2.png);}
+}
+@-webkit-keyframes pulseImgT {
+    0%   {background-image: url(../images/i3.png); }
+    50%  {background-image: url(../images/io3.png);}
+    100% {background-image: url(../images/i3.png);}
+}
+@-webkit-keyframes pulseImgF {
+    0%   {background-image: url(../images/i4.png); }
+    50%  {background-image: url(../images/io4.png);}
+    100% {background-image: url(../images/i4.png);}
+}
+@-webkit-keyframes pulseImgD {
+    0%   {background-image: url(../images/i5.png); }
+    50%  {background-image: url(../images/io5.png);}
+    100% {background-image: url(../images/i5.png);}
+}
 
 @keyframes pulseText {
     0%   {text-shadow: 4px 0px 30px rgba(48, 220, 220, 0.8);}
@@ -48,4 +106,56 @@
     75%  {text-shadow: 0px 0px 10px rgba(48, 220, 220, 1);}
     100% {text-shadow: 4px 0px 30px rgba(48, 220, 220, 0.8);}
 }
+
+#call_success, #call-popup{height: 770px; width: 770px;  display: table; border: 42px solid rgba(21, 135, 135,0.5);border-radius: 50%;  background-color: transparent; position: relative;
+    &:after{content: ''; border: 3px solid rgba(253,168,97, 0.5); position: absolute; top: -42px; left: -42px; right: -42px; bottom: -42px; border-radius: 50%;  z-index: -1; animation: pulseCirclePopup 2s linear infinite;}
+    .contact-form{border-radius: 50%; border: 5px solid #fda861; width: 100%; height: 100%; display: table-cell; vertical-align: middle; background: url(../images/sahara-bg.jpg) repeat;
+        .contact-form-title{text-align: center; max-width: 500px; margin: 0 auto;
+            .convert-img, h5{padding-bottom:25px; position: relative;
+                &:after{content: ''; position: absolute; bottom: 0; left: calc(50% - 150px); height: 1px; width: 300px; background-color: #ffa55a; }
+            }
+            h5{padding-top: 20px; font-family: "ProximaNova", sans-serif; font-size: 24px; font-weight: 400; line-height: 32px;}
+        }
+        .contact-form-row{ max-width: 300px; margin: 0 auto; padding-top: 10px;
+            .contact-form-item{ padding-bottom: 10px;
+                input{width: 100%; height: 50px; font-family: "ProximaNova", sans-serif; font-weight:
+                300; font-size: 18px; line-height: 30px; background-color: transparent; outline: none;  padding-left: 20px; border: 1px solid #bababa; transition: all 0.5s; color:#4f4f4f;
+                    &:focus{border: 1px solid #fda861;}
+                    &.error{border: 1px solid red;}
+                }
+                label{display: none !important;}
+
+                ::-webkit-input-placeholder {color: #4f4f4f;}
+                ::-moz-placeholder          {color: #4f4f4f;}
+                :-moz-placeholder           {color: #4f4f4f;}
+                :-ms-input-placeholder      {color: #4f4f4f;}
+            }
+            .contact-submit{width: 100%; outline: none; text-transform: uppercase;font-family: "ProximaNova", sans-serif; font-weight:400; font-size: 18px; color: #4f4f4f; background-color: transparent; line-height: 56px; border:2px solid #fda861; cursor: pointer; border-radius: 28px; transition: all 0.5s;
+                &:hover{background-color:#fda861; color: white;}
+            }
+        }
+    }
+}
+.fancybox-form{border-radius: 50%;
+    .fancybox-skin{ box-shadow: none; background: transparent;}
+    .fancybox-close{top: 100px;border: 10px solid rgba(21, 135, 135,0.5); width: 75px; height: 75px; border-radius: 50%;  background-image: none; transition: all 0.5s;box-shadow: inset 0px 0px 300px 200px rgba(255,255,255,1);
+        &:after{content: ''; position: absolute; width: 33px; height: 1px; transform: rotate(45deg); background-color: black; left: 12px; top: 27px;}
+        &:before{content: ''; position: absolute; width: 33px; height: 1px; transform: rotate(135deg); background-color: black; left: 12px; top: 27px; }
+        &:hover{border: 10px solid #fda861;}
+    }
+}
+
+@keyframes pulseCirclePopup {
+    0%  {border: 4px solid rgba(253,168,97, 1); position: absolute; top: 0px; left: 0px; right: 0px; bottom: 0px;}
+    100%   {border: 1px solid rgba(21, 135, 135, 0.5); position: absolute; top: -42px; left: -42px; right: -42px; bottom: -42px;}
+
+}
+@-webkit-keyframes pulseCirclePopup {
+    0%   {text-shadow: 4px 0px 30px rgba(48, 220, 220, 0.8);}
+    25%  {text-shadow: 0px 0px 10px rgba(48, 220, 220, 1);}
+    50%  {text-shadow: -4px 0px 30px rgba(48, 220, 220, 0.8);}
+    75%  {text-shadow: 0px 0px 10px rgba(48, 220, 220, 1);}
+    100% {text-shadow: 4px 0px 30px rgba(48, 220, 220, 0.8);}
+}
+
 

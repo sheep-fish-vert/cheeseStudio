@@ -172,6 +172,7 @@ function popNext(popupId, popupWrap){
         padding:0,
         fitToView:false,
         wrapCSS:popupWrap,
+        wrapCSS:'fancybox-form',
         autoSize:true,
         afterClose: function(){
             $('form').trigger("reset");

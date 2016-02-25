@@ -14,6 +14,14 @@
 
 }
 @media screen and (max-width: 992px){
+    #call_success, #call-popup { height: 450px; width: 450px;
+        .contact-form .contact-form-title .convert-img, .contact-form .contact-form-title h5 {padding-bottom: 10px;}
+        .contact-form .contact-form-title .convert-img {width: 80%; height: auto; margin-left: 10%;}
+        .contact-form .contact-form-title h5 {padding-top: 5px;font-size: 14px;font-weight: 400; line-height: 20px;}
+        .contact-form .contact-form-row .contact-form-item input { width: 100%; height: 30px; font-family: "ProximaNova", sans-serif; font-weight: 300;  font-size: 14px;}
+        .contact-form .contact-form-row .contact-submit { width: 60%; margin: 0 20%; line-height: 40px;}
+    }
+    .fancybox-form .fancybox-close {top: 35px; right: -50px;}
 
 }
 @media screen and (max-width: 767px){
@@ -30,12 +38,35 @@
     .convert-cheese-production .content-prod .concept-slogan { font-size: 24px; padding-left: 10px; padding-right: 10px;}
     .convert-cheese-production .content-prod .strange-text { font-size: 16px;padding-left: 10px; padding-right: 10px;}
 
+
 }
 @media screen and (max-width: 600px){
     .convert-cheese-production .content-prod .items-block .item{min-height: 175px;padding-top: 5px;padding-bottom: 5px;min-height: 146px;
         .after-text { font-size: 14px; }
     }
+    #call_success, #call-popup { border: 10px solid rgba(21, 135, 135, 0.5);
+        &:after{display: none;}
+    }
+    .fancybox-form .fancybox-close {top: 35px; right: 0px; top: 20px;border: 5px solid rgba(21, 135, 135, 0.5); width: 60px; height: 60px;
+        &:before{left: 9px;top: 25px;}
+        &:after{ left: 9px;top: 25px;}
+        &:hover{border: 5px solid #fda861;}
+    }
 }
+
+@media screen and (max-width: 520px){
+    .fancybox-form .fancybox-close { top: -21px;}
+    #call_success, #call-popup { height: 280px; width: 280px; border: 5px solid rgba(21, 135, 135, 0.5);
+        .contact-form { border: 2px solid #fda861;}
+        .contact-form .contact-form-title .convert-img {width: 40%; height: auto; margin-left: 30%;}
+        .contact-form .contact-form-title h5{line-height: 14px; font-size: 11px;}
+        .contact-form .contact-form-row {max-width: 220px;}
+        .contact-form .contact-form-title .convert-img:after, .contact-form .contact-form-title h5:after { left: calc(50% - 75px);  height: 1px; width: 150px; }
+        .contact-form .contact-form-row .contact-submit { width: 70%; margin: 0 15%; line-height: 25px; font-size: 14px;}
+        .contact-form .contact-form-row .contact-form-item input {height: 26px;font-size: 14px; line-height: 24px;}
+    }
+}
+
 
 @media screen and (max-width: 479px){
     .convert-cheese-production .content-prod .strange-text { padding-top: 10px;margin-bottom: 0px;padding-bottom: 15px; }
