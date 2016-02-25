@@ -41,8 +41,12 @@
         }
 
         .what-we-doing-main{display: flex;justify-content:space-around;align-items:center;text-align: center;flex-wrap:wrap;
-            .what-we-doing-item{width: 33.33%;position: relative;margin-bottom: 70px;
-                .what-we-doing-item-unactive{position: absolute;z-index: 4;width: 100%;top:50%;transform:translate(0, -50%);padding: 0 5px;opacity: 0;
+            .what-we-doing-item{width: 33.33%;position: relative;margin-bottom: 70px; overflow: hidden;
+
+                .tophide{content: '';position: absolute; top: -50%; left: 0; right: 0; height: 50%; z-index: 5; background: url(../images/sahara-bg.jpg) repeat; transition: top 0.8s; }
+                .bothide{content: ''; position: absolute; bottom: -50%; left: 0; right: 0; height: 50%; z-index: 5; background: url(../images/sahara-bg.jpg) repeat; transition: bottom 0.8s;}
+
+                .what-we-doing-item-unactive{position: absolute;z-index: 4;width: 100%;top:50%;transform:translate(0, -50%);padding: 0 5px;
                     .img-wrap{height: 125px;display: flex;align-items:center;justify-content:space-around;margin-bottom: 15px;position: relative;
                         &:after{content:'';display: block;position:absolute;top:100%;left:calc(50% - 21px);height: 1px;width: 42px;background-color:#1cb3b3;}
                     }
@@ -58,19 +62,19 @@
                         }
                     }
                 }
-                .what-we-doing-item-active{position: relative;z-index: 0;pointer-events: none;user-select:none;padding: 0 5px;max-width: 310px;width: 100%;margin:0 auto;
+                .what-we-doing-item-active{visibility: hidden; position: relative;z-index: 0;pointer-events: none;user-select:none;padding: 0 5px;max-width: 310px;width: 100%;margin:0 auto;
                     .top-title{display: flex;align-items:center;justify-content:space-around;background-color: #01aaaa;min-height: 35px;font-size: 18px;color:#fff;text-transform: uppercase;margin-bottom: 30px;}
                     .img-wrap{width: 200px;height: 200px;border-radius: 50%;margin:0 auto 27px auto;position: relative;
                         &:before{content: '';display: block;position: absolute;left:0;top:0;right:0;bottom:0;border:2px solid #e8af7e;border-radius:50%;animation: pulse-img .75s ease-out infinite;}
                     }
                     .img-main{position: relative;width: 200px;height: 200px;border:2px solid #eab487;border-radius: 50%;overflow: hidden;background-color: #fff;}
-                    .bottom-text{font-size: 24px;color:#01aaaa;line-height: 30px;position: relative;
-                        &:after{content:'';display: block;position: absolute;top:calc(100%  + 10px);left:calc(50% - 50px);width: 100px;height: 2px;background-color: #fda861;}
+                    .bottom-text{font-size: 24px;color:#01aaaa;line-height: 30px;position: relative; padding-bottom: 10px;
+                        &:after{content:'';display: block;position: absolute;bottom:0;left:calc(50% - 50px);width: 100px;height: 2px;background-color: #fda861;}
                     }
                 }
                 &.show{
-                   .what-we-doing-item-active{position: relative;z-index: 0;pointer-events: auto;user-select:auto;}
-                   .what-we-doint-item-unactive{pointer-events:none;user-select:none;}
+                   .what-we-doing-item-active{position: relative;z-index: 3;pointer-events: auto;user-select:auto; visibility: visible;}
+                   .what-we-doing-item-unactive{pointer-events:none;user-select:none; visibility: hidden;}
                 }
             }
         }
