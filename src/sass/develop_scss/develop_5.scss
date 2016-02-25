@@ -69,7 +69,7 @@ body{background: url(../images/sahara-bg.jpg) repeat;}
         }
         .logo{display: inline-block;     padding: 55px 0;}
         .form-title{font:400 18px/24px 'ProximaNova'; color:#fff; text-transform: uppercase; border-bottom:8px solid rgba(28, 179, 179, 0.3);padding-bottom: 14px;    margin-bottom: 34px;}
-        .form_row{width: 50%; float: left; padding-bottom: 17px;
+        .form_row{width: 50%; float: left; padding-bottom: 17px;  z-index: 10; position: relative;
             &:first-child{padding-right: 30px;}
         }
         .form_input{position: relative;}
