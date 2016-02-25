@@ -1,6 +1,7 @@
 /*scheme*/
-    .scheme{
-        .scheme-wrap{max-width: 1220px;}
+    .scheme{position: relative;
+        &:before{content: ''; height: 170px; background: url(../images/sahara-bg.jpg) repeat; width: 200%; display:block; position: absolute;left: 50%;    transform: translateX(-50%) rotate(-2.5deg);    top: -45px;}
+        .scheme-wrap{max-width: 1220px;     padding-top: 34px;}
         .scheme-align{}
         .title{text-align: center;     margin-bottom: 26px;
             h2{text-transform: uppercase; font:700 72px/72px 'BebasNeueBold'; color:#4f4f4f; }
@@ -33,8 +34,8 @@
 /*END scheme*/
 body{background: url(../images/sahara-bg.jpg) repeat;}
 /*clients*/
-    .our-clients{padding-bottom: 180px;
-        .clients-wrap{max-width: 1340px;}
+    .our-clients{padding-bottom: 160px;
+        .clients-wrap{max-width: 1340px; padding-top: 32px;}
         .clients-align{}
         .title{text-align: center;     margin-bottom: 26px;
             h2{text-transform: uppercase; font:700 72px/72px 'BebasNeueBold'; color:#4f4f4f; }
@@ -56,7 +57,7 @@ body{background: url(../images/sahara-bg.jpg) repeat;}
 /*clients*/
 /*contacts*/
     .contacts{background: url(../images/contactsBG.jpg) repeat; position: relative; text-align: center;
-        .contacts-wrap{ max-width: 1213px;}
+        .contacts-wrap{ max-width: 1213px; padding-top: 19px;}
         .contacts-align{}
         &:before{content: ''; display: block; position: absolute; left:0; top:-145px; background-image: url(../images/contactsBG-top.png); background-position: left top;  background-repeat: no-repeat; height: 145px; width: 100%;}
         .title{text-align: center;     margin-bottom: 5px;position: relative;
@@ -66,9 +67,9 @@ body{background: url(../images/sahara-bg.jpg) repeat;}
         .subtitle{ border:8px solid rgba(28, 179, 179, 0.3); border-radius: 60px; display: inline-block;     padding: 17px 114px;
             p{text-transform: uppercase; font:400 24px/29px 'ProximaNova'; color:#fff;}
         }
-        .logo{display: inline-block;}
-        .form-title{font:400 18px/24px 'ProximaNova'; color:#fff; text-transform: uppercase; border-bottom:8px solid rgba(28, 179, 179, 0.3);}
-        .form_row{width: 50%; float: left;
+        .logo{display: inline-block;     padding: 55px 0;}
+        .form-title{font:400 18px/24px 'ProximaNova'; color:#fff; text-transform: uppercase; border-bottom:8px solid rgba(28, 179, 179, 0.3);padding-bottom: 14px;    margin-bottom: 34px;}
+        .form_row{width: 50%; float: left; padding-bottom: 17px;
             &:first-child{padding-right: 30px;}
         }
         .form_input{position: relative;}
@@ -84,13 +85,26 @@ body{background: url(../images/sahara-bg.jpg) repeat;}
         ::-moz-placeholder {color:#fff; font:300 18px/24px 'ProximaNova';}
         :-ms-input-placeholder {color:#fff; font:300 18px/24px 'ProximaNova';}
         .button-row{text-align: right;  padding-bottom:20px; border-bottom:5px solid rgba(28, 179, 179, 0.3);}
-        button{width: 100%; max-width: 300px; height: 60px; background-color: transparent; border:2px solid #e8af7e; border-radius: 30px; color:#fff; font:300 18px/24px 'ProximaNova'; text-transform: uppercase;
-            &:hover, &:active{background-color: #e8af7e; font-weight: bold;}
+        button{width: 100%; max-width: 300px; height: 60px; background-color: transparent; border:2px solid #e8af7e; border-radius: 30px; color:#fff; font:300 18px/24px 'ProximaNova'; text-transform: uppercase; transition: all 300ms; position: relative; overflow: hidden; padding: 0; z-index: 10;
+            span{ z-index: 50; position: relative;}
+            &:before{content: ''; height: 80px;  width:320px; background-color: #e8af7e; display: block; left:calc(50% - 160px); top:calc(50% - 40px); z-index: 0; position: absolute;  animation-name: example;    animation-duration: 5s; transform:scaleX(0) scaleY(0); }
+            &:hover, &:active{ /* font-weight: bold;background-color: #e8af7e; */ &:before{transform:scale(1,1);}}
         }
-        .container-contact{display: flex; flex-wrap: no-wrap; justify-content:space-between; align-items: flex-end;
+        .container-contact{display: flex; flex-wrap: no-wrap; justify-content:space-around; align-items: flex-end;     padding: 35px 0 73px 0;
             .one-item{text-align: center;
                 span{color:#fff; font:300 18px/24px 'ProximaNova';}
+                img{    margin-bottom: 26px;}
+                &:nth-child(2){
+                    p:first-child{position: relative;
+                        &:before{position: absolute; display: block; top:-22px; left:calc(50% - 40px); border-radius: 50%;  border:5px solid rgba(28, 179, 179, 0.3); width: 80px; height: 80px; background-color: transparent; content: '';}
+                    }
+                }
             }
         }
+    }
+    @keyframes example {
+        0%{transform:scaleX(0) scaleY(0);}
+        50%{transform:scaleX(1) scaleY(0.1);}
+        100%{transform:scaleX(1) scaleY(1);}
     }
 /*END contacts*/
