@@ -17,12 +17,32 @@
 
 }
 @media screen and (max-width: 767px){
-
+    .convert-cheese-production {padding-top: 20px;}
+    .convert-cheese-production .content-prod .subtitle-text { padding-bottom: 10px;font-size: 16px;    line-height: 1.2;}
+    .convert-cheese-production .content-prod .subtitle-text {  max-width: 100%; padding-left: 10px; padding-right: 10px; }
+    .convert-cheese-production .content-prod .items-block { padding: 10px 10px;
+        .item {  width: 32%;min-height: 160px;
+            &:nth-child(4){margin-left: calc(18% - 10px);}
+        }
+    }
 }
 @media screen and (max-width: 666px){
+    .convert-cheese-production .content-prod .concept-slogan { font-size: 24px; padding-left: 10px; padding-right: 10px;}
+    .convert-cheese-production .content-prod .strange-text { font-size: 16px;padding-left: 10px; padding-right: 10px;}
 
 }
+@media screen and (max-width: 600px){
+    .convert-cheese-production .content-prod .items-block .item{min-height: 175px;padding-top: 5px;padding-bottom: 5px;min-height: 146px;
+        .after-text { font-size: 14px; }
+    }
+}
+
 @media screen and (max-width: 479px){
+    .convert-cheese-production .content-prod .strange-text { padding-top: 10px;margin-bottom: 0px;padding-bottom: 15px; }
+    .convert-cheese-production .content-prod .concept-slogan {line-height: 33px;}
+    .convert-cheese-production .content-prod .title-text{font-size: 23px;padding-bottom: 20px;
+        span { font-size: 62px;}
+    }
 
 }
 @media screen and (max-width: 320px){

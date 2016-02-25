@@ -1,0 +1,51 @@
+.convert-cheese-production{ background-image: url(../images/bg-prom.png); background-position: left top; padding-top: 137px; max-height: 1230px; min-height: 1230px; background-repeat: no-repeat;
+    .content-prod{ width: 100%; text-align: center;
+        .title-text{color: rgb(48, 220, 220); font-family: "ProximaNova"; text-transform: uppercase;font-weight: 300; font-size: 31px; text-shadow: 0px 0px 15px rgba(48, 220, 220, 0.8);line-height: 1; padding-bottom: 38px; position: relative; animation: pulseText 3s linear infinite;
+            h2{line-height: 9px;}
+            span{font-weight: 900;font-size: 81px; line-height: 1.2; }
+            &:after{content: ''; position: absolute; bottom: 0; width: 300px; height: 2px; background-color: #206762; left: calc(50% - 150px); box-shadow: 0px 0px 8px 4px rgba(32,103,98,0.75); }
+        }
+        .subtitle-text{max-width: 575px; margin: 0 auto; color: white; padding-top: 20px; padding-bottom: 28px;font-size: 18px;font-family: "ProximaNova"; line-height: 1.667;}
+
+        .beautiful-row{padding: 2px 0; border-top: 1px solid #206762; border-bottom: 1px solid #206762;box-shadow: 0px 0px 4px 2px rgba(32,103,98,0.5), inset 0px 0px 4px 2px rgba(32,103,98,0.5);
+            .block-inside{border-top: 1px solid #206762; border-bottom: 1px solid #206762;}
+        }
+
+        .items-block{ max-width: 1430px; margin: 0 auto; padding-top: 12px; padding-bottom: 4px;
+            .item{width: 20%; float: left; padding-top: 20px; padding-bottom: 20px;
+                .contfet{min-height: 70px; display: table; width: 100%;
+                    .cont-for-tab{display: table-cell; vertical-align: middle; text-align: center;
+                        .convert-img1{background-image: url(../images/i1.png); background-position: center center; background-size: 46px 66px; width: 46px; height: 66px; margin: 0 auto;}
+                        .convert-img2{background-image: url(../images/i2.png); background-position: center center; background-size: 65px 51px; width: 65px; height: 51px; margin: 0 auto;}
+                        .convert-img3{background-image: url(../images/i3.png); background-position: center center; background-size: 61px 40px; width: 61px; height: 40px; margin: 0 auto;}
+                        .convert-img4{background-image: url(../images/i4.png); background-position: center center; background-size: 69px 61px; width: 69px; height: 61px; margin: 0 auto;}
+                        .convert-img5{background-image: url(../images/i5.png); background-position: center center; background-size: 52px 52px; width: 52px; height: 52px; margin: 0 auto;}
+                    }
+                }
+                .after-text{font-size: 18px;font-family: "ProximaNova"; color: white; max-width: 280px;    line-height: 21px; margin: 0 auto;}
+            }
+        }
+        .strange-text{position: relative; max-width: 1030px; margin: 0 auto; color: white;line-height: 24px; text-align: center; padding-top: 40px; padding-bottom: 33px; font-weight: 300; margin-bottom: 20px; font-size: 18px; font-family: "ProximaNova";
+            span{color: #1cb3b3; font-weight: 800;  }
+            &:after{content: ''; position: absolute; bottom: 0; width: 200px; height: 2px; background-color: #206762; left: calc(50% - 100px); box-shadow: 0px 0px 8px 4px rgba(32,103,98,0.75); }
+        }
+        .concept-slogan{ font-family: 'BebasNeueBold', sans-serif; font-size: 36px; color: #30dcdc; max-width: 780px; margin: 0 auto; padding-bottom: 30px; padding-top: 15px; line-height: 43px;}
+    }
+}
+
+
+@keyframes pulseText {
+    0%   {text-shadow: 4px 0px 30px rgba(48, 220, 220, 0.8);}
+    25%  {text-shadow: 0px 0px 10px rgba(48, 220, 220, 1);}
+    50%  {text-shadow: -4px 0px 30px rgba(48, 220, 220, 0.8);}
+    75%  {text-shadow: 0px 0px 10px rgba(48, 220, 220, 1);}
+    100% {text-shadow: 4px 0px 30px rgba(48, 220, 220, 0.8);}
+}
+@-webkit-keyframes pulseText {
+    0%   {text-shadow: 4px 0px 30px rgba(48, 220, 220, 0.8);}
+    25%  {text-shadow: 0px 0px 10px rgba(48, 220, 220, 1);}
+    50%  {text-shadow: -4px 0px 30px rgba(48, 220, 220, 0.8);}
+    75%  {text-shadow: 0px 0px 10px rgba(48, 220, 220, 1);}
+    100% {text-shadow: 4px 0px 30px rgba(48, 220, 220, 0.8);}
+}
+
