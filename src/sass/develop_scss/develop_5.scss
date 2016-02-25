@@ -87,8 +87,8 @@ body{background: url(../images/sahara-bg.jpg) repeat;}
         .button-row{text-align: right;  padding-bottom:20px; border-bottom:5px solid rgba(28, 179, 179, 0.3);}
         button{width: 100%; max-width: 300px; height: 60px; background-color: transparent; border:2px solid #e8af7e; border-radius: 30px; color:#fff; font:300 18px/24px 'ProximaNova'; text-transform: uppercase; transition: all 300ms; position: relative; overflow: hidden; padding: 0; z-index: 10;
             span{ z-index: 50; position: relative;}
-            &:before{content: ''; height: 80px;  width:320px; background-color: #e8af7e; display: block; left:calc(50% - 160px); top:calc(50% - 40px); z-index: 0; position: absolute;  animation-name: example;    animation-duration: 5s; transform:scaleX(0) scaleY(0); }
-            &:hover, &:active{ /* font-weight: bold;background-color: #e8af7e; */ &:before{transform:scale(1,1);}}
+            &:before{content: ''; height: 80px;  width:320px; background-color: #e8af7e; display: block; left:calc(50% - 160px); top:calc(50% - 40px); z-index: 0;  transform:scale(0,0); position: absolute;  }
+            &:hover{ &:before{ animation: aloha 1s ease-out; transform:scale(1,1);}}
         }
         .container-contact{display: flex; flex-wrap: no-wrap; justify-content:space-around; align-items: flex-end;     padding: 35px 0 73px 0;
             .one-item{text-align: center;
@@ -102,9 +102,10 @@ body{background: url(../images/sahara-bg.jpg) repeat;}
             }
         }
     }
-    @keyframes example {
-        0%{transform:scaleX(0) scaleY(0);}
-        50%{transform:scaleX(1) scaleY(0.1);}
-        100%{transform:scaleX(1) scaleY(1);}
+    @keyframes aloha {
+        0%{transform:scale(0,0);}
+        10%{transform:scale(0,0.1);}
+        50%{transform:scale(1,0);}
+        100%{transform:scale(1,1);}
     }
 /*END contacts*/
