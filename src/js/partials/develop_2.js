@@ -1,4 +1,7 @@
 $(document).ready(function(){
+
+
+
     $('.what-we-doing-button-wrap>.button').click(function() {
         var t = $(this);
         $(this).closest('.what-we-doing-item').children('.tophide').css('top', '0');
@@ -16,6 +19,11 @@ $(document).ready(function(){
 });
 
 $(window).load(function(){
+
+    window.sr = ScrollReveal({
+        reset: true
+    });
+    sr.reveal('.scroll-anim');
 
 });
 
