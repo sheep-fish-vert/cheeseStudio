@@ -93,10 +93,20 @@ function lastWorksSlider(){
 
 };
 
+function fancyboxFunc(){
+
+    $('.fancybox').fancybox({
+        fitToView:true,
+        autoSize:true
+    });
+
+};
+
 $(document).ready(function(){
 
     sendwichFunc();
     lastWorksSlider();
+    fancyboxFunc();
 
 });
 

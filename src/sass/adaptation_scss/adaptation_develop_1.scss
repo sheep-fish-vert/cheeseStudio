@@ -118,6 +118,21 @@
 }
 @media screen and (max-width: 479px){
 
+    /* last-work */
+
+        .last-work{
+            .title{font-size: 42px;}
+            .sub-title{padding: 15px 15px;font-size: 16px;}
+            .slider-wrap{
+                .slider-item{padding: 0 15px;}
+            }
+            .button-wrap{
+                .button{font-size: 12px;height: 75px;line-height: 75px;}
+            }
+        }
+
+    /* /last-work */
+
 }
 @media screen and (max-width: 320px){
 
