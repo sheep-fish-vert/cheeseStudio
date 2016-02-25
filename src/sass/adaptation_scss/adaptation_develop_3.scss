@@ -17,9 +17,18 @@
 
 }
 @media screen and (max-width: 767px){
-
+    .contacts .subtitle { padding: 17px 17px;}
+    .contacts .form_row { width: 100%; float: none;}
+    .contacts .form_row:first-child {padding-right: 0px;}
+    .contacts button {min-width: 300px; margin: 0 auto; display: block;}
+    .contacts .container-contact { align-items: center;}
 }
+
 @media screen and (max-width: 666px){
+    .contacts .container-contact {display: block;padding: 15px 0;
+        .one-item{ padding: 0 10px;}
+    }
+    .contacts .subtitle p { font: 400 18px/25px 'ProximaNova';}
 
 }
 @media screen and (max-width: 479px){
