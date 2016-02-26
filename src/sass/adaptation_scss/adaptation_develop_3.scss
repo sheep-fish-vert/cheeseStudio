@@ -8,7 +8,30 @@
 
 }
 @media screen and (max-width: 1280px){
-    .our-clients .content { justify-content: center;}
+
+    /* our clients */
+
+        .our-clients .content { justify-content: center;}
+
+    /* /our clients */
+
+}
+@media screen and (max-width:1050px){
+
+    /* scheme */
+
+        .scheme{
+            .item{
+                &:nth-child(4){
+                    &:after{display: block;}
+                }
+                &:nth-child(6), &:nth-child(3){
+                    &:after{display: none;}
+                }
+            }
+        }
+
+    /* /scheme */
 
 }
 @media screen and (max-width: 1024px){
@@ -17,21 +40,101 @@
 @media screen and (max-width: 992px){
 
 }
-@media screen and (max-width: 767px){
-    .contacts .subtitle { padding: 17px 17px;}
-    .contacts .form_row { width: 100%; float: none;}
-    .contacts .form_row:first-child {padding-right: 0px;}
-    .contacts button {min-width: 300px; margin: 0 auto; display: block;}
-    .contacts .container-contact { align-items: center;}
+@media screen and (max-width: 800px){
 
-    .our-clients .subtitle { padding: 34px 10px 33px;}
+    /* scheme */
+
+        .scheme{
+            .item{
+                &:nth-child(2n){
+                    &:after{display: none;}
+                }
+                &:nth-child(2n-1){
+                    &:after{display: block;}
+                }
+                &:last-child{
+                    &:after{display: none;}
+                }
+            }
+        }
+
+    /* /scheme */
+
+}
+@media screen and (max-width: 767px){
+
+    /* contacts */
+        .contacts {
+            .subtitle { padding: 17px 17px;}
+            .form_row { width: 100%; float: none;
+                &:first-child{padding-right: 0px;}
+            }
+            button {min-width: 300px; margin: 0 auto; display: block;}
+            .container-contact { align-items: center;}
+        }
+
+    /* /contacts */
+
+    /* our clients */
+
+        .our-clients .subtitle { padding: 34px 10px 33px;}
+
+    /* /our clients */
+
+    /* scheme */
+
+        .scheme{
+            .title{
+                h2{font-size:62px;line-height: 62px;}
+            }
+            .subtitle{
+                p{font-size: 20px;line-height: 25px;}
+            }
+        }
+
+    /* /scheme */
+
 }
 
 @media screen and (max-width: 666px){
-    .contacts .container-contact {display: block;padding: 15px 0;
-        .one-item{ padding: 0 10px;}
-    }
-    .contacts .subtitle p { font: 400 18px/25px 'ProximaNova';}
+
+    /* contacts */
+
+        .contacts .container-contact {display: block;padding: 15px 0;
+            .one-item{ padding: 0 10px;}
+        }
+        .contacts .subtitle p { font: 400 18px/25px 'ProximaNova';}
+
+    /* /contacts */
+
+    /* scheme */
+
+        .scheme{
+            .title{
+                h2{font-size: 42px;line-height: 42px;}
+            }
+            .subtitle{
+                p{font-size: 18px;line-height: 23px;}
+                b{font-size: 20px;line-height: 25px;}
+            }
+        }
+
+    /* /scheme */
+
+}
+@media screen and (max-width: 551px){
+
+    /* scheme */
+
+        .scheme{
+            .item{margin-right: 22,5px;margin-left: 22.5px;
+                &:nth-child(2n-1){
+                    &:after{display: none;}
+                }
+            }
+        }
+
+    /* /scheme */
 
 }
 @media screen and (max-width: 479px){

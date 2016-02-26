@@ -2,15 +2,14 @@
     .scheme{position: relative;
         &:before{content: ''; height: 170px; background: url(../images/sahara-bg.jpg) repeat; width: 200%; display:block; position: absolute;left: 50%;    transform: translateX(-50%) rotate(-2.5deg);    top: -45px;}
         .scheme-wrap{max-width: 1220px;     padding-top: 34px;}
-        .scheme-align{}
         .title{text-align: center;     margin-bottom: 26px;
             h2{text-transform: uppercase; font:700 72px/72px 'BebasNeueBold'; color:#4f4f4f; }
         }
-        .subtitle{border-top: 1px solid #30dcdc; border-bottom: 1px solid #30dcdc; width: 100%; text-align: center; text-transform: uppercase;     padding: 34px 155px 32px;
-            p{font:400 24px/29px 'ProximaNova'; color: #4f4f4f;}
+        .subtitle{border-top: 1px solid #30dcdc; border-bottom: 1px solid #30dcdc; width: 100%; text-align: center; text-transform: uppercase;     padding: 34px 10px 32px 10px;
+            p{font:400 24px/29px 'ProximaNova'; color: #4f4f4f;max-width: 870px;width: 100%;margin: 0 auto;}
             b{font:900 24px/29px 'ProximaNova';color:#1cb3b3;}
         }
-        .content{    padding-top: 40px;}
+        .content{padding-top: 40px;}
         .content-wrap{text-align: center;}
         .item{display: inline-block; position: relative; margin-right: 45px;
             .item-align{text-align: center; width: 200px;}
