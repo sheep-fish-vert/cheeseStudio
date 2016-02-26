@@ -6,14 +6,8 @@ $(document).ready(function(){
     $('.what-we-doing-button-wrap>.button').click(function() {
 
         $('.what-we-doing-item').removeClass('show');
+        $(this).parents('.what-we-doing-item').addClass('show');
 
-        var t = $(this);
-
-        setTimeout(function() {
-
-            t.closest('.what-we-doing-item').addClass('show');
-
-        }, 1000);
     });
 });
 
