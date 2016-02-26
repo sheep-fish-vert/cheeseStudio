@@ -13,21 +13,20 @@
 
         .items-block{ max-width: 1430px; margin: 0 auto; padding-top: 12px; padding-bottom: 4px;
             .item{width: 20%; float: left; padding-top: 20px; padding-bottom: 20px;
-                .contfet{min-height: 70px; display: table; width: 100%;
-                    .cont-for-tab{display: table-cell; vertical-align: middle; text-align: center;
-
-                        .convert-img1{background-image: url(../images/i1.png); background-position: center center; background-size: 46px 66px; width: 46px; height: 66px; margin: 0 auto; animation: pulseImgO 1s linear infinite;}
-
-                        .convert-img2{background-image: url(../images/i2.png); background-position: center center; background-size: 65px 51px; width: 65px; height: 51px; margin: 0 auto; animation: pulseImgS 1s linear infinite;}
-
-                        .convert-img3{background-image: url(../images/i3.png); background-position: center center; background-size: 61px 40px; width: 61px; height: 40px; margin: 0 auto; animation: pulseImgT 1s linear infinite;}
-
-                        .convert-img4{background-image: url(../images/i4.png); background-position: center center; background-size: 69px 61px; width: 69px; height: 61px; margin: 0 auto; animation: pulseImgF 1s linear infinite;}
-
-                        .convert-img5{background-image: url(../images/i5.png); background-position: center center; background-size: 52px 52px; width: 52px; height: 52px; margin: 0 auto; animation: pulseImgD 1s linear infinite;}
+                .contfet{min-height: 70px; display: flex; width: 100%;align-items:center;justify-content:center;
+                    .cont-for-tab{position: relative;
+                        &>div{display:inline-block;}
+                        .img-wrap-hover{position: absolute;top:0;left:0;right:0;bottom:0;opacity: 0;animation: pulseImg 2s linear infinite;}
                     }
                 }
                 .after-text{font-size: 18px;font-family: "ProximaNova"; color: white; max-width: 280px;    line-height: 21px; margin: 0 auto;}
+                &:nth-child(2n){
+                    .contfet{
+                        .cont-for-tab{
+                            .img-wrap-hover{animation-delay:.5s;}
+                        }
+                    }
+                }
             }
         }
         .strange-text{position: relative; max-width: 1030px; margin: 0 auto; color: white;line-height: 24px; text-align: center; padding-top: 40px; padding-bottom: 33px; font-weight: 300; margin-bottom: 20px; font-size: 18px; font-family: "ProximaNova";
@@ -39,58 +38,13 @@
 }
 
 
-@keyframes pulseImgO {
-    0%   {background-image: url(../images/i1.png); }
-    50%  {background-image: url(../images/io1.png);}
-    100% {background-image: url(../images/i1.png);}
+@keyframes pulseImg {
+    0%   {opacity: 0; }
+    50%  {opacity: 1;}
+    100% {opacity: 0;}
 }
 
-@keyframes pulseImgS {
-    0%   {background-image: url(../images/i2.png); }
-    50%  {background-image: url(../images/io2.png);}
-    100% {background-image: url(../images/i2.png);}
-}
-@keyframes pulseImgT {
-    0%   {background-image: url(../images/i3.png); }
-    50%  {background-image: url(../images/io3.png);}
-    100% {background-image: url(../images/i3.png);}
-}
-@keyframes pulseImgF {
-    0%   {background-image: url(../images/i4.png); }
-    50%  {background-image: url(../images/io4.png);}
-    100% {background-image: url(../images/i4.png);}
-}
-@keyframes pulseImgD {
-    0%   {background-image: url(../images/i5.png); }
-    50%  {background-image: url(../images/io5.png);}
-    100% {background-image: url(../images/i5.png);}
-}
-@-webkit-keyframes pulseImgO {
-    0%   {background-image: url(../images/i1.png); }
-    50%  {background-image: url(../images/io1.png);}
-    100% {background-image: url(../images/i1.png);}
-}
 
-@-webkit-keyframes pulseImgS {
-    0%   {background-image: url(../images/i2.png); }
-    50%  {background-image: url(../images/io2.png);}
-    100% {background-image: url(../images/i2.png);}
-}
-@-webkit-keyframes pulseImgT {
-    0%   {background-image: url(../images/i3.png); }
-    50%  {background-image: url(../images/io3.png);}
-    100% {background-image: url(../images/i3.png);}
-}
-@-webkit-keyframes pulseImgF {
-    0%   {background-image: url(../images/i4.png); }
-    50%  {background-image: url(../images/io4.png);}
-    100% {background-image: url(../images/i4.png);}
-}
-@-webkit-keyframes pulseImgD {
-    0%   {background-image: url(../images/i5.png); }
-    50%  {background-image: url(../images/io5.png);}
-    100% {background-image: url(../images/i5.png);}
-}
 
 @keyframes pulseText {
     0%   {text-shadow: 4px 0px 30px rgba(48, 220, 220, 0.8);}
