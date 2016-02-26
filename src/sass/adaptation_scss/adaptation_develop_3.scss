@@ -8,6 +8,7 @@
 
 }
 @media screen and (max-width: 1280px){
+    .our-clients .content { justify-content: center;}
 
 }
 @media screen and (max-width: 1024px){
@@ -22,6 +23,8 @@
     .contacts .form_row:first-child {padding-right: 0px;}
     .contacts button {min-width: 300px; margin: 0 auto; display: block;}
     .contacts .container-contact { align-items: center;}
+
+    .our-clients .subtitle { padding: 34px 10px 33px;}
 }
 
 @media screen and (max-width: 666px){

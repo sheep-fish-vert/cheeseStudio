@@ -92,7 +92,7 @@ body{background: url(../images/sahara-bg.jpg) repeat;}
             &:hover{ &:before{ animation: aloha 1s ease-out; transform:scale(1,1);}}
         }
         .container-contact{display: flex; flex-wrap: no-wrap; justify-content:space-around; align-items: flex-end;     padding: 35px 0 73px 0;
-            .one-item{text-align: center; display: block; cursor: pointer;
+            .one-item{text-align: center; display: block; cursor: pointer; text-decoration: none;
                 p .con {display: flex; align-items: center; width: 75px; height: 75px; margin: 0 auto; border: 3px solid rgba(28, 179, 179,0); border-radius: 50%; transition: all 0.5s;
                     img{display: block;  margin: 0 auto;}
                 }
@@ -111,16 +111,3 @@ body{background: url(../images/sahara-bg.jpg) repeat;}
     }
 /*END contacts*/
 
-.активная {
-  border-width: 3px;
-  border-color: rgb(28, 179, 179);
-  border-style: solid;
-  border-radius: 50%;
-  opacity: 0.502;
-  position: absolute;
-  left: 502px;
-  top: 7563px;
-  width: 74px;
-  height: 74px;
-  z-index: 48;
-}
