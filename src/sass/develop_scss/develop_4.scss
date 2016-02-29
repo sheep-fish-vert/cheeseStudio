@@ -40,9 +40,8 @@
             }
         }
 
-        .what-we-doing-main{display: flex;justify-content:space-around;align-items:center;text-align: center;flex-wrap:wrap;
-            .what-we-doing-item{width: 33.33%;position: relative;margin-bottom: 70px; overflow: hidden;
-
+        .what-we-doing-main{display: flex;justify-content:space-around;align-items:center;text-align: center;flex-wrap:wrap;margin-bottom: 70px; padding-top: 60px;
+            .what-we-doing-item{width: 33.33%;position: relative; overflow: hidden;     margin-top: -60px;
                 .tophide{content: '';position: absolute; top: -50%; left: 0; right: 0; height: 50%; z-index: 5; background: url(../images/sahara-bg.jpg) repeat; transition: top 0.8s; }
                 .bothide{content: ''; position: absolute; bottom: -50%; left: 0; right: 0; height: 50%; z-index: 5; background: url(../images/sahara-bg.jpg) repeat; transition: bottom 0.8s;}
 
