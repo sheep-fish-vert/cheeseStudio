@@ -17,6 +17,11 @@
         $mail = substr(htmlspecialchars(trim($_POST['contact_email'])), 0, 100);
         $mess .= '<b>Почта:</b>' . $mail . '<br>';
     }
+
+    if(isset($_POST['contact_text'])) {
+        $mail = substr(htmlspecialchars(trim($_POST['contact_text'])), 0, 100);
+        $mess .= '<b>Коментарий:</b>' . $mail . '<br>';
+    }
     $mess .= '<hr>';
     // подключаем файл класса для отправки почты
     require 'class.phpmailer.php';
