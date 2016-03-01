@@ -4,7 +4,7 @@
     function showHideWhatWeDoingBlocks(){
 
         $(document).on('click', function(e){
-            console.log($(e.target));
+
             if($(e.target).is('.what-we-doing-button') || $(e.target).parents('.what-we-doing-button').length){
 
                 $('.what-we-doing-item').removeClass('show');

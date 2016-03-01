@@ -84,7 +84,7 @@
         .header{
             .header-wrap{display: block;}
             .header-logo{position: relative;z-index: 2;}
-            .header-nav{position: absolute;left: -20px;right:-20px;top: -22px;width: auto;padding-top: 99px;padding-bottom:10px;z-index: 1;overflow:hidden;background-color: rgba(0,0,0, .75);display: none;
+            .header-nav{position: absolute;left: -20px;right:-20px;top: calc(100% + 22px);width: auto;padding-top: 20px;padding-bottom:10px;z-index: 1;overflow:hidden;background-color: rgba(0,0,0, .85);display: none;
                 ul{
                     li{display: block;text-align: center;margin-bottom: 10px;position:relative;left:0;transition:left 300ms ease;
                         &:nth-child(odd){left: 100%;}
