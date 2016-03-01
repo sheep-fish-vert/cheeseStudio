@@ -87,10 +87,10 @@ function animationBlock(item){
 
 /*GO TO href*/
 function goTo(){
-    $('.header-menu a').click(function(e){
+    $('.header-nav a').click(function(e){
         e.preventDefault();
         var href = $(this).attr('href');
-        var target = $(href).offset().top-65;
+        var target = $(href).offset().top-99;
         $(scroller).animate({scrollTop:target},500);
     });
 }
@@ -139,7 +139,7 @@ $(document).ready(function() {
     oneHeightItems2();
     $('.footer_placeholder').height($('.footer').outerHeight());
 
-    //goTo();
+    goTo();
     //animationBlock($('.setion-animate'));
 });
 
