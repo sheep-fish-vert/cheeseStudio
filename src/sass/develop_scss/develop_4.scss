@@ -41,9 +41,8 @@
         }
 
         .what-we-doing-main{display: flex;justify-content:space-around;align-items:center;text-align: center;flex-wrap:wrap;margin-bottom: 70px; padding-top: 60px;
-            .what-we-doing-item{width: 33.33%;position: relative; overflow: hidden;     margin-top: -60px;
-                .tophide{content: '';position: absolute; top: -50%; left: 0; right: 0; height: 50%; z-index: 5; background: url(../images/sahara-bg.jpg) repeat; transition: top 0.8s; }
-                .bothide{content: ''; position: absolute; bottom: -50%; left: 0; right: 0; height: 50%; z-index: 5; background: url(../images/sahara-bg.jpg) repeat; transition: bottom 0.8s;}
+            .what-we-doing-item{width: 33.33%;position: relative; overflow: hidden;     margin-top: -60px;z-index: 0;
+                &.show{z-index: 1;}
 
                 .what-we-doing-item-unactive{position: absolute;z-index: 4;width: 100%;top:50%;transform:translate(0, -50%);padding: 0 5px;opacity: 1; transition: all .5s linear .5s;
                     .img-wrap{height: 125px;display: flex;align-items:center;justify-content:center;margin-bottom: 15px;position: relative;
