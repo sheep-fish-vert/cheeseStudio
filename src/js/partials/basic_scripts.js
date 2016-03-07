@@ -139,7 +139,7 @@ $(document).ready(function() {
     oneHeightItems2();
     $('.footer_placeholder').height($('.footer').outerHeight());
 
-    goTo();
+    //goTo();
     //animationBlock($('.setion-animate'));
 });
 
